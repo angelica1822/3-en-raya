@@ -1,0 +1,66 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+	//creación del tablero
+	// a | b | c
+	//-----------
+	// d | e | f
+	//-----------
+	// g | h | i
+
+	cout << "Tres en Raya" << endl << "Alumno 1: Olga Angelica Barreros Rodriguez"<< endl<< "Alumno 2: Sergio Manuel Sirena Málaga" << endl;
+
+
+	char a = 'a';
+	char b = 'b';
+	char c = 'c';
+	char d = 'd';
+	char e = 'e';
+	char f = 'f';
+	char g = 'g';
+	char h = 'h';
+	char i = 'i';
+	char j1;
+	char j2;
+	char sj1;
+	char sj2;
+
+
+	//imprimimos el tablero
+
+	cout << "Aquí les mostraremos como funcionará el tablero: " << endl << endl;
+	cout << " " << a << " " << "|" << " " << b << " " << "|"<< " " << c << " " << endl << "-----------" << endl << " " << d << " " << "|" << " " << e << " " << "|"<< " " << f << " " << endl<< "-----------"<< endl << " " << g << " " << "|" << " " << h << " " << "|"<< " " << i << " " << endl << endl;    
+	
+	//pedimos el nombre a los jugadores
+
+	cout << "Jugador 1" << endl << "ingrese su nombre:"<< endl;
+	cin >> j1;
+	cout << "Jugador 2" << endl << "ingrese su nombre:"<< endl;
+	cin >> j2;
+
+
+	//pedir x o 0
+
+	cout << j1 << "Ingrese 1 si desea jugar con X o 2 si desea jugar con 0" << endl;
+	cin >> sj1;
+	cout << j2 << "Ingrese 1 si desea jugar con X o 2 si desea jugar con 0" << endl;
+	cin >> sj2;
+
+	if(sj1 == sj2){
+
+		cout << "\a""ERROR, han introducido el mismo simbolo" << endl;
+
+	}
+
+
+
+	
+
+
+
+
+
+	return 0;
+}
