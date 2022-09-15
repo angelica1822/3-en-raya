@@ -1,0 +1,191 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+	//creación del tablero
+	// a | b | c
+	//-----------
+	// d | e | f
+	//-----------
+	// g | h | i
+
+	cout << "---------------" <<"Tres en Raya"<< "---------------" << endl << "------------------------------------------"
+	<< endl << "Alumno 1: Olga Angelica Barreros Rodriguez"<< endl << "------------------------------------------"
+	<< endl <<  "Alumno 2: Sergio Manuel Sirena Malaga" << endl << "------------------------------------------"
+	<< endl;
+
+
+	char a = 'a';
+	char b = 'b';
+	char c = 'c';
+	char d = 'd';
+	char e = 'e';
+	char f = 'f';
+	char g = 'g';
+	char h = 'h';
+	char i = 'i';
+	int sj1;
+	int sj2;
+
+
+	//imprimimos el tablero
+
+	cout << "Aqui les mostraremos como funciona el tablero: " << endl << endl;
+	cout << " " << a << " " << "|" << " " << b << " " << "|"<< " " << c << " " << endl << "-----------" << endl << " " << d << " " << "|" << " " << e << " " << "|"<< " " << f << " " << endl<< "-----------"<< endl << " " << g << " " << "|" << " " << h << " " << "|"<< " " << i << " " << endl << endl;    
+
+
+	//pedir x o 0
+
+	cout <<"Jugador 1, ingrese 1 si desea jugar con X o 2 si desea jugar con 0" << endl;
+	cin >> sj1;
+	if(sj1 > 2){
+		cout << "\aHa ingresado un valor no registrado";
+	}
+	else{
+
+	cout << "Jugador 2, ingrese 1 si desea jugar con X o 2 si desea jugar con 0" << endl;
+	cin >> sj2;
+
+		if(sj2 > 2){
+			cout << "\aHa ingresado un valor no registrado";
+		}
+	}
+
+	if(sj1 == sj2){
+
+		cout << "\a""ERROR, han introducido el mismo simbolo" << endl;
+
+	}
+
+	//inicio del juego
+
+	int contador = 1;
+
+	while(contador <= 9){
+
+		char a = ' ';
+		char b = ' ';
+		char c = ' ';
+		char d = ' ';
+		char e = ' ';
+		char f = ' ';
+		char g = ' ';
+		char h = ' ';
+		char i = ' ';
+		char eleccion1;
+		char eleccion2;
+
+		if((contador == 1) || (contador == 3) || (contador == 5) || (contador == 7) || (contador == 9)){ 
+
+			cout << "Jugador 1, elija su jugada :" << endl << endl;
+			cin >> eleccion1;
+
+			if(eleccion1 == 'a'){
+			 	a = 'X';
+			 	contador = contador + 1;
+			 }  
+			else if(eleccion1 == 'b'){
+			 	b = 'X';
+			 	contador = contador + 1;
+			 }
+			else if(eleccion1 == 'c'){
+			 	c = 'X';
+			 	contador = contador + 1;
+			 }
+			else if(eleccion1 == 'd'){
+			 	d = 'X';
+			 	contador = contador + 1;
+			 }  
+			else if(eleccion1 == 'e'){
+			 	e = 'X';
+			 	contador = contador + 1;
+			 }
+			else if(eleccion1 == 'f'){
+			 	f = 'X';
+			 	contador = contador + 1;
+			 }
+			else if(eleccion1 == 'g'){
+			 	g = 'X';
+			 	contador = contador + 1;
+			 }  
+			else if(eleccion1 == 'h'){
+			 	h = 'X';
+			 	contador = contador + 1;
+			 }
+			else if(eleccion1 == 'i'){
+			 	i = 'X';
+			 	contador = contador + 1;
+			 }
+
+		}
+		 
+		if((contador == 2) || (contador == 4) || (contador == 6) || (contador == 8)){ 
+		cout << "jugador 2, ingrese su jugada" << endl << endl;
+		cin >> eleccion2;
+
+			if(eleccion2 == 'a'){
+			 	a = '0';
+			 	contador = contador + 1;
+			 }  
+			else if(eleccion2 == 'b'){
+			 	b = '0';
+			 	contador = contador + 1;
+			 }
+			else if(eleccion2 == 'c'){
+			 	c = '0';
+			 	contador = contador + 1;
+			 }
+			else if(eleccion2 == 'd'){
+			 	d = '0';
+			 	contador = contador + 1;
+			 }  
+			else if(eleccion2 == 'e'){
+			 	e = '0';
+			 	contador = contador + 1;
+			 }
+			else if(eleccion2 == 'f'){
+			 	f = '0';
+			 	contador = contador + 1;
+			 }
+			else if(eleccion2 == 'g'){
+			 	g = '0';
+			 	contador = contador + 1;
+			 }  
+			else if(eleccion2 == 'h'){
+			 	h = '0';
+			 	contador = contador + 1;
+			 }
+			else if(eleccion2 == 'i'){
+			 	i = '0';
+			 	contador = contador + 1;
+			 }
+
+		}
+
+		cout << endl <<" " << a << " " << "|" << " " << b << " " << "|"<< " " << c << " " << endl << "-----------" << endl << " "
+		<< d << " " << "|" << " " << e << " " << "|"<< " " << f << " " << endl<< "-----------"<< endl << " " 
+		<< g << " " << "|" << " " << h << " " << "|"<< " " << i << " " << endl << endl;
+
+		if(contador == 10){
+		 	break;
+		 } 
+
+
+	}
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	return 0;
+}
